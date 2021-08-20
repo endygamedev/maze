@@ -38,7 +38,7 @@ Then we create a matrix of ones (<code><i>maze</i></code>), in the further imple
   <i>(2) Maze matrix initialization</i>
 </p>
 <p>Set the matrix element <code><i>maze<sub>start.x start.y</sub></i> = 0</code> and also denote by <code><i>(current.x, current.y)</sub></i></code> the current position in the maze matrix.<br>
-Until we reach the finish <code><i>(current.x, current.y) != (finish.x, finish.y)</i></code>, then we take a random cell from the list of passed cells and a random direction of movement: up, down, left, right; we check whether we can go in this direction, if not, then we change the direction of movement until the desired direction is found, we move in the chosen direction.<br>
+Until we reach the finish <code><i>(current.x, current.y) ≠ (finish.x, finish.y)</i></code>, then we take a random cell from the list of passed cells and a random direction of movement: up, down, left, right; we check whether we can go in this direction, if not, then we change the direction of movement until the desired direction is found, we move in the chosen direction.<br>
 Thus, at each iteration, we move in a random direction of a random cell until we find the finish. We destroy the walls. 
 </p>
 <h3>2. Naive pathfinding algorithm</h3>
