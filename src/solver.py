@@ -22,7 +22,6 @@
 import tkinter as tk
 from PIL import Image, ImageTk, ImageDraw
 from maze import Maze
-from pprint import pprint
 
 
 class App(tk.Tk):
@@ -160,7 +159,6 @@ class App(tk.Tk):
                 (x, y) = x, y + 1
             path.append((x, y))
             k -= 1
-        pprint(matrix)
         return path, matrix
 
     def btn_start_event(self):
@@ -208,4 +206,4 @@ class App(tk.Tk):
 
 
 if __name__ == "__main__":
-    App(className="Maze", width=10, height=10, zoom=20)
+    App(className="Maze", width=50, height=30, zoom=8)
