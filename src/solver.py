@@ -206,4 +206,4 @@ class App(tk.Tk):
 
 
 if __name__ == "__main__":
-    App(className="Maze", width=80, height=50, zoom=5)
+    App(className="Maze", width=50, height=30, zoom=10)
